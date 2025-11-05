@@ -6,12 +6,21 @@
     <title>Tailwind Project</title>
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
+    <style>
+  .main-posts::-webkit-scrollbar {
+    display: none;
+  }
+  .main-posts {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
   </head>
 
   <body class="font-inter bg-black text-4xl font-extralight">
     <main class="bg-black">
       <div class="flex justify-center">
-        <aside class="border-r-[0.5px] bg-black text-white">
+        <aside class="border-r-[0.5px] border-gray-400 bg-black text-white">
           <div class="logo font-inter text-4xl font-extralight"></div>
           <div class="feilds">
             <div class="logo my-1 flex justify-center p-2 min-[1300px]:justify-start">
@@ -140,7 +149,7 @@
           </button>
         </aside>
 
-        <section class="flex h-[600px] w-full max-w-[598px] flex-wrap overflow-auto border-amber-50 bg-black text-white">
+        <section class="main-posts border-r-[0.5px] border-gray-400 flex h-[600px] w-full max-w-[598px] flex-wrap overflow-auto bg-black text-white">
           <div class="parts flex h-[53px] w-full border-[1px] border-gray-500 font-medium text-white">
             <div class="foryou relative flex w-[50%] flex-col items-center justify-center">
               <h4>For you</h4>
